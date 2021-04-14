@@ -16,7 +16,7 @@ const totalWages = dataEmployees.map(unit => {
    return unit + container.wagesEarned = hrsWork * 27;
   });
 
-console.log(totalWages);
+console.log(`Total Wages for the week ${this.totalWages`});
 
 //Array Reduce
 let totalSum = dataEmployees.reduce(function (hours, cost) {
@@ -24,9 +24,7 @@ let totalSum = dataEmployees.reduce(function (hours, cost) {
     return hours + cost * cost.hrsWork;
 },0);
 
-console.log(totalSum);
-
-//Call and Apply for Timecards
+console.log(`Total Cost for Payroll ${this.totalSum`});
 
 let allWagesFor = function () {
     let eligibleDates = this.timeInEvents.map(function (e) {
