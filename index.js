@@ -1,13 +1,32 @@
-/* Your Code Here hint hint */
+//Array Map
+let dataEmployees = [
+          {firstName: "Thor", lastName: "Odinsson", title: "Electrical Engineer", hrsWork: 45},
+          {firstName: "Loki", lastName: "Laufeysson-Odinsson", title: "HR Representative", hrsWork: 35},
+          {firstName: "Natalia", lastName: "Romanov", title: "CEO", hrsWork: 150},
+          {firsName: "Darcey", lastName: "Lewis", title: "Intern", hrsWork: 15},
+          {firstName: "Jarvis", lastName: "Stark", title: "CIO", hrsWork: 125},
+          {firstName: "Anthony", lastName: "Stark", title: "Angel Investor", hrsWork: 300},
+          {firstName: "Byron", lastName: "Poodle", title: "Mascot", hrsWork: 3},
+          {firstName: "Julius", lastName: "Caesar", title: "General", hrsWork: 27},
+          {firstName: "Rafiki", lastName: "", title: "Aide", hrsWork: 10},
+          {firstName: "Simba", lastName: "", title: "King", hrsWork: 100}
+        ];
+const totalWages = dataEmployees.map(unit => {
+    const container = {};
+   return unit + container.wagesEarned = hrsWork * 27;
+  });
 
-/*
- We're giving you this function. Take a look at it, you might see some usage
- that's new and different. That's because we're avoiding a well-known, but
- sneaky bug that we'll cover in the next few lessons!
+console.log(totalWages);
 
- As a result, the lessons for this function will pass *and* it will be available
- for you to use if you need it!
- */
+//Array Reduce
+let totalSum = dataEmployees.reduce(function (hours, cost) {
+    const cost = 27;
+    return hours + cost * cost.hrsWork;
+},0);
+
+console.log(totalSum);
+
+//Call and Apply for Timecards
 
 let allWagesFor = function () {
     let eligibleDates = this.timeInEvents.map(function (e) {
